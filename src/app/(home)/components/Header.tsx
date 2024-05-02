@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { SiGithub, SiLinkedin, SiX } from "react-icons/si";
 
-export default function Navbar({className}: {className?: string}) {
+export default function Header({className}: {className?: string}) {
   const socials = [
     {
       link: "https://linkedin.com/in/anikmalik",

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import Nav from "./(home)/components/Nav";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -47,6 +48,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <Nav />
         </ThemeProvider>
       </body>
     </html>

@@ -1,10 +1,12 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import ParticlesContainer from "./components/ParticlesContainer";
+import Nav from "./components/Nav";
+import Transition from "../../components/transition";
 
 export default function page() {
   return (
@@ -12,7 +14,7 @@ export default function page() {
       <div className=" dark:bg-black bg-white  dark:bg-grid-white/[0.05] bg-grid-black/[0.2] relative">
         <ParticlesContainer />
         <div className="max-w-7xl mx-auto sm:p-5">
-          <Navbar />
+          <Header />
           <HeroSection />
         </div>
         <div
