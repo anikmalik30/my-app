@@ -23,7 +23,7 @@ export default function Header({className}: {className?: string}) {
   ];
   return (
     <nav className={cn("py-10  flex justify-between items-center animate-move-down",className)}>
-      <h1 className="text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2">
+      <h1 className="text-2xl font-bold underline underline-offset-8 decoration-yellow-600 -rotate-2 text-slate-300">
         Anik Malik 👨‍💻
       </h1>
 
@@ -32,7 +32,7 @@ export default function Header({className}: {className?: string}) {
           const Icon = social.icon;
           return (
             <Link key={index} href={social.link} area-label={social.label}>
-              <Icon className="w-5 h-5 hover:scale-125 transition-all"/>
+              <Icon className="w-5 h-5 hover:scale-125 transition-all text-slate-300"/>
             </Link>
           );
         })}

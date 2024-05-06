@@ -12,14 +12,14 @@ export default function Projects() {
       tech: [SiReact, SiTailwindcss, SiNodedotjs],
       link: "http://www.testlink.com",
       cover: "/project-1.png",
-      background: "bg-indigo-500",
+      background: "bg-yellow-500",
     },
     {
       title: "Project 2",
       tech: [SiReact, SiTailwindcss, SiNodedotjs],
       link: "http://www.testlink.com",
       cover: "/project-1.png",
-      background: "bg-green-500",
+      background: "bg-slate-400",
     },
     // {
     //   title: "Project 3",

@@ -34,7 +34,7 @@ export default function Nav() {
       {/* inner */}
       <div
         className="flex w-full xl:flex-col items-center justify-between 
-      xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-[80px] bg-green-200/10 xl:h-max py-8 bg-white/10
+      xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-[80px] bg-green-200/10 xl:h-max py-8
       backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full "
       >
         {navData.map((link, index) => {
@@ -54,8 +54,8 @@ export default function Nav() {
               {/* icon */}
               <Icon
                 className={`${
-                  link.path === pathname && "text-green-400"
-                } relative flex items-center hover:text-green-500 hover:scale-125 transition-all`}
+                  link.path === pathname && "text-yellow-500"
+                } relative flex items-center hover:text-yellow-500 hover:scale-125 transition-all`}
               />
             </Link>
           );

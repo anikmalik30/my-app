@@ -12,7 +12,7 @@ export default function page() {
   return (
     <div className="min-h-screen bg-black overflow-hidden">
       <div className=" dark:bg-black bg-white  dark:bg-grid-white/[0.05] bg-grid-black/[0.2] relative">
-        <ParticlesContainer />
+        {/* <ParticlesContainer /> */}
         <div className="max-w-7xl mx-auto sm:p-5">
           <Header />
           <HeroSection />

@@ -80,5 +80,15 @@
       height: 0px;
       border-radius: 50%;
       background-color: #fff;
-      box-shadow: 0 0 200px 130px #c026d3; /* outer cyan */
+      box-shadow: 0 0 200px 130px #9ca3af; /* outer cyan */
+  }
+
+  .cube-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to bottom right, rgba(255,255,255,0.5), transparent);
   }
