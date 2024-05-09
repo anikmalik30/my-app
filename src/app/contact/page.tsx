@@ -1,9 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
 import Header from "../(home)/components/Header";
-import { useState } from "react";
+import React, { useState } from "react";
 
-export default function ContactPage() {
+function ContactPage() {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
 
@@ -28,7 +28,7 @@ export default function ContactPage() {
                 {/* <motion.div> */}
                 {text.split("").map((letter, index) => (
                   <motion.span
-                    key={index}
+                    key={letter}
                     initial={{ opacity: 1 }}
                     animate={{ opacity: 0 }}
                     transition={{
@@ -80,3 +80,5 @@ export default function ContactPage() {
     </>
   );
 }
+
+export default React.memo(ContactPage);

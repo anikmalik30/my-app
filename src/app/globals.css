@@ -67,9 +67,6 @@
 }
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
   * {
     @apply border-border;
   }
@@ -98,4 +95,9 @@
     rgba(255, 255, 255, 0.5),
     transparent
   );
+}
+
+.cube-container-2 {
+  width: 1046px;
+  height: 1046px;
 }

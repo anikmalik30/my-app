@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Title({
+function Title({
   text,
   className,
 }: {
@@ -17,3 +17,5 @@ export default function Title({
     </div>
   );
 }
+
+export default React.memo(Title);

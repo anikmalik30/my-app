@@ -1,14 +1,14 @@
 import React from "react";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Footer from "./components/Footer";
-// import ParticlesContainer from "./components/ParticlesContainer";
-// import Nav from "./components/Nav";
-// import Transition from "../../components/transition";
+import dynamic from 'next/dynamic';
 
-export default function page() {
+const Skills = dynamic(() => import('./components/Skills'));
+const Projects = dynamic(() => import('./components/Projects'));
+const Footer = dynamic(() => import('./components/Footer'));
+// import ParticlesContainer from "./components/ParticlesContainer";
+
+function page() {
   return (
     <div className="min-h-screen bg-black overflow-hidden">
       <div className=" dark:bg-black bg-white  dark:bg-grid-white/[0.05] bg-grid-black/[0.2] relative">
@@ -30,3 +30,4 @@ export default function page() {
     </div>
   );
 }
+export default React.memo(page);

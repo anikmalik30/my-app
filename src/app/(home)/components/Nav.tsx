@@ -23,7 +23,7 @@ const navData = [
   },
 ];
 
-export default function Nav() {
+function Nav() {
   const pathname = usePathname();
 
   return (
@@ -40,7 +40,7 @@ export default function Nav() {
         {navData.map((link, index) => {
           const Icon = link.icon;
           return (
-            <Link key={index} href={link.path} className="group">
+            <Link key={link.path} href={link.path} className="group">
               {/* tooltip */}
               <div className="absolute pr-14 right-0 hidden xl:group-hover:flex">
                 <div className="bg-slate-900 relative flex text-white items-center p-[6px] rounded-[3px]">
@@ -53,9 +53,9 @@ export default function Nav() {
               </div>
               {/* icon */}
               <Icon
-                className={`${
-                  link.path === pathname && "text-yellow-500"
-                } relative flex items-center hover:text-yellow-500 hover:scale-125 transition-all`}
+                className={`relative flex items-center hover:text-white hover:scale-125 transition-all ${
+                  link.path === pathname ? "text-white" : "text-gray-400"
+                }`}
               />
             </Link>
           );
@@ -64,3 +64,4 @@ export default function Nav() {
     </nav>
   );
 }
+export default React.memo(Nav);

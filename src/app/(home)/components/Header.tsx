@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { SiGithub, SiLinkedin, SiX } from "react-icons/si";
 
-export default function Header({className}: {className?: string}) {
+ function Header({className}: {className?: string}) {
   const socials = [
     {
       link: "https://linkedin.com/in/anikmalik",
@@ -31,7 +31,7 @@ export default function Header({className}: {className?: string}) {
         {socials.map((social, index) => {
           const Icon = social.icon;
           return (
-            <Link key={index} href={social.link} area-label={social.label}>
+            <Link key={social.link} href={social.link} area-label={social.label}>
               <Icon className="w-5 h-5 hover:scale-125 transition-all text-slate-300"/>
             </Link>
           );
@@ -40,3 +40,5 @@ export default function Header({className}: {className?: string}) {
     </nav>
   );
 }
+
+export default React.memo(Header);

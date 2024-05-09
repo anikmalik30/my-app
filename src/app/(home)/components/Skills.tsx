@@ -5,7 +5,7 @@ import Title from "./Title";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { SiExpress, SiGit, SiJavascript, SiMongodb, SiMysql, SiNextdotjs, SiNextui, SiNodedotjs, SiReact, SiTailwindcss } from "react-icons/si";
 
-export default function Skills() {
+function Skills() {
   const skills = [
     {
       text: "React",
@@ -55,3 +55,4 @@ export default function Skills() {
     </div>
   );
 }
+export default React.memo(Skills);

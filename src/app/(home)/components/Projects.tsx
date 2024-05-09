@@ -5,7 +5,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 
-export default function Projects() {
+function Projects() {
   const projects = [
     {
       title: "Project 1",
@@ -38,7 +38,7 @@ export default function Projects() {
       <div className="grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5">
         {projects.map((project, index) => {
           return (
-            <Link href={project.link} key={index}>
+            <Link href={project.link} key={project.title}>
               <div className={cn("p-5 rounded-md", project.background)}>
                 <DirectionAwareHover
                   imageUrl={project.cover}
@@ -48,7 +48,7 @@ export default function Projects() {
                   <h1 className="text-2xl font-bold">{project.title}</h1>
                   <div className="flex items-center gap-5">
                     {project.tech.map((Icon, index) => (
-                      <Icon key={index} className="w-8 h-8" />
+                      <Icon key={Icon.name} className="w-8 h-8" />
                     ))}
                   </div>
                   </div>
@@ -61,3 +61,4 @@ export default function Projects() {
     </div>
   );
 }
+export default React.memo(Projects);
