@@ -163,7 +163,7 @@ export default function AboutPage() {
               >
                   {skills.map((skill, index) => {
                     return(
-                <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                <div key={index} className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                       {skill.name}
                     </div>
                     )

@@ -1,8 +1,8 @@
-import { MovingBorderBtn } from "@/components/ui/moving-border.";
+// import { MovingBorderBtn } from "@/components/ui/moving-border.";
 import Link from "next/link";
 import React from "react";
 import Title from "./Title";
-import Spline from "@splinetool/react-spline";
+// import Spline from "@splinetool/react-spline";
 import dynamic from "next/dynamic";
 
 // import RotatingCube from "@/components/rotating-cube";

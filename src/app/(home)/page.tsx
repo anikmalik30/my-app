@@ -4,9 +4,9 @@ import HeroSection from "./components/HeroSection";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-import ParticlesContainer from "./components/ParticlesContainer";
-import Nav from "./components/Nav";
-import Transition from "../../components/transition";
+// import ParticlesContainer from "./components/ParticlesContainer";
+// import Nav from "./components/Nav";
+// import Transition from "../../components/transition";
 
 export default function page() {
   return (
