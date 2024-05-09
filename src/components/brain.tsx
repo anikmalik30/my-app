@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import Link from "next/link";
 import { motion, useTransform, MotionValue } from "framer-motion";
 
