@@ -12,7 +12,7 @@ export default function HeroSection() {
   return (
     <div className="min-h-[60vh] flex flex-col-reverse gap-10 lg:gap-0 lg:flex-row items-center justify-between animate-move-up">
       <div className="flex flex-col justify-center items-center lg:items-start space-y-10 text-center lg:text-left">
-        <h1 className="text-4xl lg:text-7xl font-bold text-slate-300">
+        <h1 className="text-4xl lg:text-7xl font-bold text-gray-100">
           Nice to meet you! 👋
           <br />
           <span className="underline underline-offset-8 decoration-yellow-600">
