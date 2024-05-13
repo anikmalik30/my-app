@@ -3,6 +3,8 @@ import Cards from "./components/Cards";
 import Header from "../(home)/components/Header";
 import withFooter from "../withFooter";
 
+export const revalidate = 30;
+
 async function Blog() {
   return (
     <div className="min-h-screen bg-black overflow-hidden">
