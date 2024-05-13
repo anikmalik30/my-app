@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { GoHome } from "react-icons/go";
 import { MdOutlineEmail, MdPerson, MdPerson2 } from "react-icons/md";
+import { FaBlog } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 
 const navData = [
@@ -20,6 +21,11 @@ const navData = [
     name: "Contact",
     path: "/contact",
     icon: MdOutlineEmail,
+  },
+  {
+    name: "Blogs",
+    path: "/blogs",
+    icon: FaBlog  ,
   },
 ];
 

@@ -2,10 +2,11 @@
 import Brain from "@/components/brain";
 import { motion, useInView, useScroll } from "framer-motion";
 import Image from "next/image";
-import { useRef } from "react";
+import React, { useRef } from "react";
 import Header from "../(home)/components/Header";
+import withFooter from "../withFooter";
 
-export default function AboutPage() {
+ function AboutPage() {
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   const { scrollYProgress } = useScroll({ container: containerRef });
@@ -324,3 +325,5 @@ export default function AboutPage() {
     </div>
   );
 }
+
+export default React.memo(withFooter(AboutPage));

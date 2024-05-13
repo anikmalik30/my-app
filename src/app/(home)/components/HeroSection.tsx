@@ -49,7 +49,7 @@ export default function HeroSection() {
         {/* <Spline scene="https://prod.spline.design/7a2ZWwrf3jXU5WMw/scene.splinecode" /> */}
         {/* <div className=" object-contain"> */}
         <div className="lg:absolute top-0 left-0 right-0 bottom-0 flex lg:justify-end items-center lg:ml-72 transform">
-          <div className="cube-container-2">
+          <div className="cube-container-2 lg:block hidden">
             <RotatingCube />
           </div>
         </div>
