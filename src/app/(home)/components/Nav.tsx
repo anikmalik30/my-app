@@ -24,7 +24,7 @@ const navData = [
   },
   {
     name: "Blogs",
-    path: "/blogs",
+    path: "/blog  ",
     icon: FaBlog  ,
   },
 ];

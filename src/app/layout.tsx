@@ -10,7 +10,7 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://localhost:3000"),
 
-  title: "anikmalik",
+  title: "Anik Malik",
   authors: {
     name: "Anik Malik",
   },
