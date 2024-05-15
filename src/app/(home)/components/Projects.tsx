@@ -12,14 +12,14 @@ function Projects() {
       tech: [SiReact, SiTailwindcss, SiNodedotjs],
       link: "http://www.testlink.com",
       cover: "/project-1.png",
-      background: "bg-yellow-500",
+      background: "bg-gray-600",
     },
     {
       title: "Project 2",
       tech: [SiReact, SiTailwindcss, SiNodedotjs],
       link: "http://www.testlink.com",
       cover: "/project-1.png",
-      background: "bg-slate-400",
+      background: "bg-gray-400",
     },
     // {
     //   title: "Project 3",
@@ -32,14 +32,14 @@ function Projects() {
   return (
     <div className="py-10 p-5 sm:p-0">
       <Title
-        text="Projects 🎨"
+        text="Projects"
         className="flex flex-col items-center justify-center rotate-6"
       />
       <div className="grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5">
         {projects.map((project, index) => {
           return (
             <Link href={project.link} key={project.title}>
-              <div className={cn("p-5 rounded-md", project.background)}>
+              <div className={cn("p-2 rounded-md", project.background)}>
                 <DirectionAwareHover
                   imageUrl={project.cover}
                   className="w-full space-y-5 cursor-pointer"

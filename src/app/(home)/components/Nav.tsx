@@ -24,14 +24,13 @@ const navData = [
   },
   {
     name: "Blogs",
-    path: "/blog  ",
-    icon: FaBlog  ,
+    path: "/blog",
+    icon: FaBlog,
   },
 ];
 
 function Nav() {
   const pathname = usePathname();
-
   return (
     <nav
       className="flex flex-col items-center justify-center gap-y-4 fixed h-max bottom-0 mt-auto 
@@ -59,9 +58,8 @@ function Nav() {
               </div>
               {/* icon */}
               <Icon
-                className={`relative flex items-center hover:text-white hover:scale-125 transition-all ${
-                  link.path === pathname ? "text-white" : "text-gray-400"
-                }`}
+                className={`relative flex items-center hover:text-white hover:scale-125 transition-all ${link.path === pathname ? "text-white" : "text-gray-400"
+                  }`}
               />
             </Link>
           );

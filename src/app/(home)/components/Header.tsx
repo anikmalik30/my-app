@@ -23,8 +23,9 @@ import { SiGithub, SiLinkedin, SiX } from "react-icons/si";
   ];
   return (
     <nav className={cn("py-10  flex justify-between items-center animate-move-down",className)}>
-      <h1 className="text-2xl font-bold underline underline-offset-8 decoration-yellow-600 -rotate-2 text-slate-300">
-        Anik Malik 👨‍💻
+      <h1 className="text-2xl font-bold -rotate-2 text-slate-300">
+      {/*  underline underline-offset-8 decoration-yellow-600 */}
+        Anik Malik 
       </h1>
 
       <div className="flex items-center gap-5">

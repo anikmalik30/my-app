@@ -21,7 +21,6 @@ async function getData(slug: string) {
 
 async function BlogArticle({ params }: { params: { slug: string } }) {
   const data: fullBlog = await getData(params.slug);
-  console.log(data);
   return (
     <div className="min-h-screen bg-black overflow-hidden">
       <div className="max-w-7xl mx-auto sm:p-5">
