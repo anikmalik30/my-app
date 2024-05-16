@@ -6,7 +6,7 @@ import withFooter from "../withFooter";
 
 const Skills = dynamic(() => import("./components/Skills"));
 const Projects = dynamic(() => import("./components/Projects"));
-const Footer = dynamic(() => import("./components/Footer"));
+// const Footer = dynamic(() => import("./components/Footer"));
 // import ParticlesContainer from "./components/ParticlesContainer";
 
 function page() {
