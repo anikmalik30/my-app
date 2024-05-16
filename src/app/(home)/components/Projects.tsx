@@ -12,14 +12,14 @@ function Projects() {
       tech: [SiReact, SiTailwindcss, SiNodedotjs],
       link: "http://www.testlink.com",
       cover: "/project-1.png",
-      background: "bg-gray-600",
+      background: "bg-gray-300",
     },
     {
       title: "Project 2",
       tech: [SiReact, SiTailwindcss, SiNodedotjs],
       link: "http://www.testlink.com",
       cover: "/project-1.png",
-      background: "bg-gray-400",
+      background: "bg-gray-300",
     },
     // {
     //   title: "Project 3",

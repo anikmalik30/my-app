@@ -39,7 +39,7 @@ function Nav() {
       {/* inner */}
       <div
         className="flex w-full xl:flex-col items-center justify-between 
-      xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-[80px] bg-green-200/10 xl:h-max py-8
+      xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-[80px] bg-zinc-800 xl:h-max py-8
       backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full "
       >
         {navData.map((link, index) => {
@@ -48,7 +48,7 @@ function Nav() {
             <Link key={link.path} href={link.path} className="group">
               {/* tooltip */}
               <div className="absolute pr-14 right-0 hidden xl:group-hover:flex">
-                <div className="bg-slate-900 relative flex text-white items-center p-[6px] rounded-[3px]">
+                <div className="bg-zinc-900 relative flex text-gray-200 items-center p-[6px] rounded-[3px]">
                   <div className="text-[12px] leading-none font-semibold capitalize">
                     {link.name}
                   </div>
@@ -58,7 +58,7 @@ function Nav() {
               </div>
               {/* icon */}
               <Icon
-                className={`relative flex items-center hover:text-white hover:scale-125 transition-all ${link.path === pathname ? "text-white" : "text-gray-400"
+                className={`relative flex items-center hover:text-gray-200 hover:scale-125 transition-all ${link.path === pathname ? "text-gray-200" : "text-zinc-400"
                   }`}
               />
             </Link>

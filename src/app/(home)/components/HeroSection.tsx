@@ -13,7 +13,7 @@ export default function HeroSection() {
   return (
     <div className="min-h-[60vh] flex flex-col-reverse gap-10 lg:gap-0 lg:flex-row items-center justify-between animate-move-up">
       <div className="flex flex-col justify-center items-center lg:items-start space-y-10 text-center lg:text-left">
-        <h1 className="text-4xl lg:text-7xl font-bold text-gray-100">
+        <h1 className="text-4xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-200 to-gray-400">
           Nice to meet you!
           <br />
           <span className="">
@@ -29,8 +29,8 @@ export default function HeroSection() {
         {/* <Link href={"mailto:some@gmail.com"} className=" inline-block group">
           <Title text="Contact Me 📪" />
         </Link> */}
-        <Button className="rounded-full px-12 py-4 text-lg">
-          Contact  <ChevronRightIcon className="h-4 w-4" />
+        <Button className="rounded-full px-12 py-4 text-lg font-bold text-zinc-900">
+          Contact  <ChevronRightIcon className="h-4 w-4 font-bold text-zinc-900" />
         </Button>
       </div>
 
@@ -54,10 +54,10 @@ export default function HeroSection() {
         {/* </div>  */}
         {/* <Spline scene="https://prod.spline.design/7a2ZWwrf3jXU5WMw/scene.splinecode" /> */}
         {/* <div className=" object-contain"> */}
-        <div className="lg:absolute top-0 left-0 right-0 bottom-0 flex lg:justify-end items-center lg:ml-60 transform">
-          <div className="cube-container-2 lg:block hidden">
+        <div className="lg:absolute top-0 left-0 right-0 bottom-0 flex lg:justify-end items-center lg:ml-60 transform mt-5">
+          {/* <div className="cube-container-2 lg:block hidden"> */}
             <RotatingCube />
-          </div>
+          {/* </div> */}
         </div>
         {/* </div> */}
       </div>
