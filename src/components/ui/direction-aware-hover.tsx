@@ -81,10 +81,7 @@ export const DirectionAwareHover = ({
           <motion.div
             variants={variants}
             className="h-full w-full relative bg-gray-50 dark:bg-black"
-            transition={{
-              duration: 0.2,
-              ease: "easeOut",
-            }}
+            transition={transition}
           >
             <Image
               alt="image"
@@ -99,10 +96,7 @@ export const DirectionAwareHover = ({
           </motion.div>
           <motion.div
             variants={textVariants}
-            transition={{
-              duration: 0.5,
-              ease: "easeOut",
-            }}
+            transition={textTransition}
             className={cn(
               "text-white absolute bottom-4 left-4 z-40",
               childrenClassName
@@ -166,4 +160,14 @@ const textVariants = {
     x: 20,
     opacity: 1,
   },
+};
+
+const transition = {
+  duration: 0.2,
+  ease: "easeOut",
+};
+
+const textTransition = {
+  duration: 0.5,
+  ease: "easeOut",
 };

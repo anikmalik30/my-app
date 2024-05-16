@@ -3,7 +3,7 @@
 import React from "react";
 import Title from "./Title";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
-import { SiExpress, SiGit, SiJavascript, SiMongodb, SiMysql, SiNextdotjs, SiNextui, SiNodedotjs, SiReact, SiTailwindcss } from "react-icons/si";
+import { SiExpress, SiGit, SiJavascript, SiMongodb, SiMysql, SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss } from "react-icons/si";
 
 function Skills() {
   const skills = [
