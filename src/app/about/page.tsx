@@ -5,8 +5,9 @@ import Image from "next/image";
 import React, { useRef } from "react";
 import Header from "../(home)/components/Header";
 import withFooter from "../withFooter";
+import AAnimation from "@/components/a-animation";
 
- function AboutPage() {
+function AboutPage() {
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   const { scrollYProgress } = useScroll({ container: containerRef });
@@ -37,6 +38,7 @@ import withFooter from "../withFooter";
 
   return (
     // <div>
+    <>
     <div className="min-h-screen overflow-hidden">
       <div className="max-w-7xl mx-auto sm:p-5">
         <Header />
@@ -162,13 +164,13 @@ import withFooter from "../withFooter";
                 animate={isSkillRefInView ? { x: 0 } : {}}
                 className="flex gap-4 flex-wrap"
               >
-                  {skills.map((skill, index) => {
-                    return(
-                <div key={index} className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                {skills.map((skill, index) => {
+                  return (
+                    <div key={index} className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                       {skill.name}
                     </div>
-                    )
-                    })}
+                  )
+                })}
               </motion.div>
               {/* SKILL SCROLL */}
               <motion.svg
@@ -320,9 +322,15 @@ import withFooter from "../withFooter";
           {/* <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-1/2">
             <Brain scrollYProgress={scrollYProgress} />
           </div> */}
+          {/* <div className="hidden lg:block w-1/3 sticky z-30 xl:w-1/2"> */}
+          {/* </div> */}
+          {/* <AAnimation /> */}
         </div>
+
       </motion.div>
     </div>
+      <AAnimation />
+      </>
   );
 }
 
