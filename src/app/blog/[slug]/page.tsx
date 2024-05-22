@@ -42,7 +42,7 @@ async function BlogArticle({ params }: { params: { slug: string } }) {
           height={800}
           alt="Title Image"
           priority
-          className=" rounded mt-8 mx-auto"
+          className="rounded mt-8 mx-auto"
         />
         <div className="mx-auto mt-16 prose prose-blue prose-xl dark:prose-invert">
           <PortableText value={data.content} />

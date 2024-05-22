@@ -19,7 +19,7 @@ export default function Transition() {
     <>
 
       <motion.div
-        className="fixed top-0 bottom-0 right-full  h-screen w-screen z-30 
+        className="fixed right-full  h-screen w-screen z-30 
       bg-[#292524]"
         variants={transitionVariants}
         initial="initial"
@@ -29,7 +29,7 @@ export default function Transition() {
       >
       </motion.div>
       <motion.div
-        className="fixed top-0 bottom-0 right-full w-screen h-screen z-20 
+        className="fixed right-full w-screen h-screen z-20 
       bg-[#1c1917]"
         variants={transitionVariants}
         initial="initial"
@@ -39,7 +39,7 @@ export default function Transition() {
       >
       </motion.div>
       <motion.div
-        className="fixed top-0 bottom-0 right-full w-screen h-screen z-10 
+        className="fixed right-full w-screen h-screen z-10 
       bg-[#0c0a09]"
         variants={transitionVariants}
         initial="initial"
