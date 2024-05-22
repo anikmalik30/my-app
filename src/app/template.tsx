@@ -1,10 +1,10 @@
 "use client";
 import { AnimatePresence, animate, motion } from "framer-motion";
-// import dynamic from "next/dynamic";
+import dynamic from "next/dynamic";
 import { usePathname, useRouter } from "next/navigation";
 // Dynamically import the Transition component
-// const Transition = dynamic(() => import("../components/transition"), { ssr: false });
-import Transition from "@/components/transition";
+const Transition = dynamic(() => import("@/components/transition"), { ssr: false });
+// import Transition from "@/components/transition";
 
 
 export default function Template({ children }: { children: React.ReactNode }) {

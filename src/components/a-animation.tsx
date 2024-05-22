@@ -1,6 +1,11 @@
 "use client";
-import Spline from "@splinetool/react-spline";
-import React, { useRef, useEffect } from "react";
+import React from "react";
+import dynamic from 'next/dynamic';
+
+const Spline = dynamic(
+  () => import('@splinetool/react-spline'),
+  { ssr: false }
+)
 // import * as THREE from "three";
 // import { Reflector } from "three/examples/jsm/objects/Reflector.js";
 

@@ -32,7 +32,7 @@ import { SiGithub, SiLinkedin, SiX } from "react-icons/si";
         {socials.map((social, index) => {
           const Icon = social.icon;
           return (
-            <Link key={social.link} href={social.link} area-label={social.label}>
+            <Link key={social.link} href={social.link} aria-label={social.label}>
               <Icon className="w-5 h-5 hover:scale-125 hover:text-gray-200 transition-all text-zinc-400"/>
             </Link>
           );

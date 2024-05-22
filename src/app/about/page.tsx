@@ -5,7 +5,10 @@ import Image from "next/image";
 import React, { useRef } from "react";
 import Header from "../(home)/components/Header";
 import withFooter from "../withFooter";
-import AAnimation from "@/components/a-animation";
+// import AAnimation from "@/components/a-animation";
+import dynamic from "next/dynamic";
+const AAnimation = dynamic(() => import("@/components/a-animation"), { ssr: false });
+
 
 function AboutPage() {
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -329,7 +332,9 @@ function AboutPage() {
 
       </motion.div>
     </div>
+    <div className="-z-999">
       <AAnimation />
+    </div>
       </>
   );
 }
