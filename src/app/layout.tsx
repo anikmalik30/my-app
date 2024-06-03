@@ -3,6 +3,11 @@ import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Nav from "./(home)/components/Nav";
+// import smoothscroll from 'smoothscroll-polyfill';
+
+// if (typeof window !== 'undefined') {
+//   smoothscroll.polyfill();
+// }
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 

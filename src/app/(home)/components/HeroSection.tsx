@@ -29,9 +29,13 @@ export default function HeroSection() {
         {/* <Link href={"mailto:some@gmail.com"} className=" inline-block group">
           <Title text="Contact Me 📪" />
         </Link> */}
-        <Button className="rounded-full px-12 py-4 text-lg font-bold text-zinc-900">
-          Contact  <ChevronRightIcon className="h-4 w-4 font-bold text-zinc-900" />
-        </Button>
+        <Link href="/contact">
+          {/* <a> */}
+            <Button className="rounded-full px-12 py-4 text-lg font-bold text-zinc-900">
+              Get In Touch <ChevronRightIcon className="h-4 w-4 font-bold text-zinc-900" />
+            </Button>
+          {/* </a> */}
+        </Link>
       </div>
 
       <div className="relative flex justify-center items-center -z-1">
@@ -56,7 +60,7 @@ export default function HeroSection() {
         {/* <div className=" object-contain"> */}
         <div className="lg:absolute top-0 left-0 right-0 bottom-0 flex lg:justify-end items-center lg:ml-60 transform mt-5">
           {/* <div className="cube-container-2 lg:block hidden"> */}
-            <RotatingCube />
+          <RotatingCube />
           {/* </div> */}
         </div>
         {/* </div> */}

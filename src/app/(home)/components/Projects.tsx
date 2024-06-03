@@ -10,14 +10,14 @@ function Projects() {
     {
       title: "Project 1",
       tech: [SiReact, SiTailwindcss, SiNodedotjs],
-      link: "http://www.testlink.com",
+      link: "https://anikmalik.netlify.app/blog",
       cover: "/project-1.png",
       background: "bg-gray-300",
     },
     {
       title: "Project 2",
       tech: [SiReact, SiTailwindcss, SiNodedotjs],
-      link: "http://www.testlink.com",
+      link: "https://anikmalik.netlify.app/blog",
       cover: "/project-1.png",
       background: "bg-gray-300",
     },
