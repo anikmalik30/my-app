@@ -45,7 +45,7 @@ function Nav() {
         {navData.map((link, index) => {
           const Icon = link.icon;
           return (
-            <Link key={link.path} href={link.path} className="group">
+            <Link key={link.path} href={link.path} aria-label={link.name} className="group">
               {/* tooltip */}
               <div className="absolute pr-14 right-0 hidden xl:group-hover:flex">
                 <div className="bg-zinc-900 relative flex text-gray-200 items-center p-[6px] rounded-[3px]">
