@@ -3,6 +3,7 @@ import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Nav from "./(home)/components/Nav";
+import Cursor from "@/components/Cursor";
 // import smoothscroll from 'smoothscroll-polyfill';
 
 // if (typeof window !== 'undefined') {
@@ -45,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={spaceGrotesk.className}>
-        {" "}
+      <Cursor/>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
