@@ -7,7 +7,7 @@ import Header from "../(home)/components/Header";
 import withFooter from "../withFooter";
 // import AAnimation from "@/components/a-animation";
 import dynamic from "next/dynamic";
-import ScrollSvg from "@/components/ui/ScrollSvg"
+import ScrollSvg from "../../components/ui/ScrollSvg"
 // const AAnimation = dynamic(() => import("@/components/a-animation"), { ssr: false });
 
 
