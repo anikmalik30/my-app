@@ -15,4 +15,6 @@ const RotatingCube: React.FC = memo(() => {
   );
 });
 
+RotatingCube.displayName = "RotatingCube";
+
 export default RotatingCube;
