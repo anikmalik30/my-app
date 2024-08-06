@@ -12,9 +12,10 @@ const RotatingCube: React.FC = memo(() => {
   return (
     <div
       className="relative animate-webgl-scale-in-fade"
-      style={{ transform: "scale(0.5)" }}
+      style={{ transform: "scale(0.8)" }}
     >
-      <Spline scene="https://prod.spline.design/8s57-Maaz4u-3lJe/scene.splinecode" />
+      {/* <Spline scene="https://prod.spline.design/8s57-Maaz4u-3lJe/scene.splinecode" /> */}
+      <Spline scene="/rubiks_cube_animation.splinecode" />
     </div>
   );
 });
