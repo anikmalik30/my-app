@@ -46,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={spaceGrotesk.className}>
-        {/* <Cursor/> */}
+        <Cursor />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

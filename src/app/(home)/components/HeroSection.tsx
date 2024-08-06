@@ -33,9 +33,9 @@ export default function HeroSection() {
           </Button>
         </Link>
       </div>
-      <div className="relative flex justify-center items-center -z-1">
+      <div className="relative flex justify-center items-center -z-1 spotlight">
         <div className="absolute order-1 transform-gpu grayscale md:order-2 md:w-[700px] hidden items-center justify-center lg:flex lg:animate-[open-scale-up-fade_1.5s_ease-in-out] before:from-green-5/5 before:to-yellow-6/25 before:absolute before:left-0 before:top-0 before:block before:h-full before:w-full before:rounded-full before:bg-gradient-to-br before:blur-[100px] before:content-['']">
-          <div className="lg:absolute top-0 left-0 right-0 bottom-0 flex lg:justify-end items-center lg:mr-40 transform mt-5">
+          <div className="lg:absolute top-0 left-0 right-0 bottom-0 flex lg:justify-end items-center lg:mr-40 transform mt-5 spotlight">
             <RotatingCube />
           </div>
         </div>
