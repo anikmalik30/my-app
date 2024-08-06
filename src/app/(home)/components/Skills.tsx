@@ -3,7 +3,17 @@
 import React from "react";
 import Title from "./Title";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
-import { SiExpress, SiGit, SiJavascript, SiMongodb, SiMysql, SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss } from "react-icons/si";
+import {
+  SiExpress,
+  SiGit,
+  SiJavascript,
+  SiMongodb,
+  SiMysql,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiReact,
+  SiTailwindcss,
+} from "react-icons/si";
 
 function Skills() {
   const skills = [
@@ -32,17 +42,17 @@ function Skills() {
       icon: SiMongodb,
     },
     {
-        text: "MySQL",
-        icon: SiMysql,
+      text: "MySQL",
+      icon: SiMysql,
     },
     {
-        text: "Next.js",
-        icon: SiNextdotjs,
+      text: "Next.js",
+      icon: SiNextdotjs,
     },
     {
-        text:"Git",
-        icon: SiGit,
-    }
+      text: "Git",
+      icon: SiGit,
+    },
   ];
   return (
     <div className="max-w-5xl mx-auto px-8">

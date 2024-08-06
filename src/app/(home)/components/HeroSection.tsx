@@ -4,11 +4,11 @@ import React from "react";
 import Title from "./Title";
 import dynamic from "next/dynamic";
 import { Button } from "@/components/ui/button";
-import { ChevronRightIcon } from "@radix-ui/react-icons"
+import { ChevronRightIcon } from "@radix-ui/react-icons";
 const RotatingCube = dynamic(() => import("@/components/rotating-cube"), {
   ssr: false,
+  loading: () => <div className="spinner">Loading animation...</div>,
 });
-
 export default function HeroSection() {
   return (
     <div className="min-h-[60vh] flex flex-col-reverse gap-10 lg:gap-0 lg:flex-row items-center justify-between animate-move-up">
@@ -31,9 +31,10 @@ export default function HeroSection() {
         </Link> */}
         <Link href="/contact">
           {/* <a> */}
-            <Button className="rounded-full px-12 py-4 text-lg font-bold text-zinc-900">
-              Get In Touch <ChevronRightIcon className="h-4 w-4 font-bold text-zinc-900" />
-            </Button>
+          <Button className="rounded-full px-12 py-4 text-lg font-bold text-zinc-900">
+            Get In Touch{" "}
+            <ChevronRightIcon className="h-4 w-4 font-bold text-zinc-900" />
+          </Button>
           {/* </a> */}
         </Link>
       </div>

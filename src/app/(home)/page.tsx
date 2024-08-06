@@ -11,7 +11,7 @@ const Projects = dynamic(() => import("./components/Projects"));
 function Page() {
   // const header = useMemo(() => <Header />, []);
   // const heroSection = useMemo(() => <HeroSection />, []);
-  // const skills = useMemo(() => <Skills />, []); 
+  // const skills = useMemo(() => <Skills />, []);
   // const projects = useMemo(() => <Projects />, []);
 
   return (
@@ -21,7 +21,7 @@ function Page() {
         <div className="max-w-7xl mx-auto sm:p-5">
           <Header />
           <HeroSection />
-           {/* {header}
+          {/* {header}
           {heroSection} */}
         </div>
         <div
@@ -30,7 +30,7 @@ function Page() {
         ></div>
       </div>
       <div className="max-w-7xl mx-auto p-5">
-        <Skills />
+        {/* <Skills /> */}
         <Projects />
         {/* {skills}
         {projects} */}
