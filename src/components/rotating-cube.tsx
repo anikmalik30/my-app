@@ -6,7 +6,7 @@ import React, { memo } from "react";
 //   ssr: false,
 //   loading: () => <p>Loading...</p>,
 // });
-import Spline from "@splinetool/react-spline";
+import Spline from "@splinetool/react-spline/next";
 
 const RotatingCube: React.FC = memo(() => {
   return (
