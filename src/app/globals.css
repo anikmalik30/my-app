@@ -173,7 +173,7 @@ a {
   height: 1046px;
 }
 
-.spline-container canvas {
+.spline-canvas {
   width: 600px !important;
   height: 600px !important;
 }
