@@ -30,8 +30,8 @@ function Page() {
         ></div>
       </div>
       <div className="max-w-7xl mx-auto p-5">
-        {/* <Skills /> */}
-        <Projects />
+        <Skills />
+        {/* <Projects /> */}
         {/* {skills}
         {projects} */}
       </div>

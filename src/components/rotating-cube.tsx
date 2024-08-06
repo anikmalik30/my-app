@@ -2,14 +2,18 @@
 import dynamic from "next/dynamic";
 import React, { memo } from "react";
 
-const Spline = dynamic(() => import("@splinetool/react-spline"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
+// const Spline = dynamic(() => import("@splinetool/react-spline"), {
+//   ssr: false,
+//   loading: () => <p>Loading...</p>,
+// });
+import Spline from "@splinetool/react-spline";
 
 const RotatingCube: React.FC = memo(() => {
   return (
-    <div style={{ transform: "scale(0.5)" }}>
+    <div
+      className="relative animate-webgl-scale-in-fade"
+      style={{ transform: "scale(0.5)" }}
+    >
       <Spline scene="https://prod.spline.design/8s57-Maaz4u-3lJe/scene.splinecode" />
     </div>
   );
@@ -18,3 +22,20 @@ const RotatingCube: React.FC = memo(() => {
 RotatingCube.displayName = "RotatingCube";
 
 export default RotatingCube;
+
+// "use client";
+// import Spline from "@splinetool/react-spline";
+
+// export default function RotatingCube() {
+// return (
+// <Spline scene="/rubiks_cube_animation.splinecode" />
+// <div style={{ width: "100%", height: "100vh" }}>
+// </div>
+// <main>
+// <Spline scene="https://prod.spline.design/8s57-Maaz4u-3lJe/scene.splinecode" />
+// </main>
+// <div className="spline-container">
+
+// </div>
+// );
+// }
