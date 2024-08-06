@@ -11,8 +11,8 @@ import Spline from "@splinetool/react-spline";
 const RotatingCube: React.FC = memo(() => {
   return (
     <div
-      className="relative animate-webgl-scale-in-fade"
-      style={{ transform: "scale(0.7)" }}
+      className="relative animate-webgl-scale-in-fade mr-40"
+      style={{ transform: "scale(0.8)" }}
     >
       <Spline scene="https://prod.spline.design/8s57-Maaz4u-3lJe/scene.splinecode" />
       {/* <Spline scene="/rubiks_cube_animation.splinecode" /> */}
