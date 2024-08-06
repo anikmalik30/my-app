@@ -10,12 +10,14 @@ import Spline from "@splinetool/react-spline";
 
 const RotatingCube: React.FC = memo(() => {
   return (
-    <div
-      className="relative animate-webgl-scale-in-fade"
-      style={{ transform: "scale(0.5)" }}
-    >
-      <Spline scene="https://prod.spline.design/8s57-Maaz4u-3lJe/scene.splinecode" />
-      {/* <Spline scene="/rubiks_cube_animation.splinecode" />  */}
+    <div className="relative order-1 transform-gpu grayscale md:order-2 md:w-[700px] hidden items-center justify-center lg:flex lg:animate-[open-scale-up-fade_1.5s_ease-in-out] before:from-green-5/5 before:to-yellow-6/25 before:absolute before:left-0 before:top-0 before:block before:h-full before:w-full before:rounded-full before:bg-gradient-to-br before:blur-[100px] before:content-['']">
+      <div
+        className="relative animate-webgl-scale-in-fade"
+        // style={{ transform: "scale(0.5)" }}
+      >
+        <Spline scene="https://prod.spline.design/8s57-Maaz4u-3lJe/scene.splinecode" />
+        {/* <Spline scene="/rubiks_cube_animation.splinecode" />  */}
+      </div>
     </div>
   );
 });
