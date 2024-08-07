@@ -97,9 +97,9 @@ function AboutPage() {
                 </p>
                 {/* BIO QUOTE */}
                 <span className="italic">
-                  " Driven by a passion for technology and problem-solving, I
-                  thrive on creating impactful solutions and exploring new
-                  challenges in the world of web development. "
+                  &quot; Driven by a passion for technology and problem-solving,
+                  I thrive on creating impactful solutions and exploring new
+                  challenges in the world of web development. &quot;
                 </span>
                 {/* BIO SIGNATURE */}
                 <div className="self-end">
