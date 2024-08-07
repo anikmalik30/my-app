@@ -1,5 +1,11 @@
 import React from "react";
-import { SiNodedotjs, SiReact, SiTailwindcss } from "react-icons/si";
+import {
+  SiExpress,
+  SiMysql,
+  SiNodedotjs,
+  SiReact,
+  SiTailwindcss,
+} from "react-icons/si";
 import Title from "./Title";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -8,8 +14,8 @@ import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 function Projects() {
   const projects = [
     {
-      title: "Project 1",
-      tech: [SiReact, SiTailwindcss, SiNodedotjs],
+      title: "UNESCO",
+      tech: [SiReact, SiNodedotjs, SiExpress, SiMysql],
       link: "https://anikmalik.netlify.app/blog",
       cover: "/project-1.png",
       background: "bg-gray-300",
@@ -35,6 +41,11 @@ function Projects() {
         text="Projects"
         className="flex flex-col items-center justify-center"
       />
+      <p className="text-center text-gray-500 text-lg mt-4">
+        Here are some of my projects that I have worked on.
+        <br />
+        Click on the cards to view the project.
+      </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5 ">
         {projects.map((project, index) => {
           return (

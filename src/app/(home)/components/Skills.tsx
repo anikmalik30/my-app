@@ -58,8 +58,13 @@ function Skills() {
     <div className="max-w-5xl mx-auto px-8">
       <Title
         text="Skills"
-        className="flex flex-col items-center justify-center mt-20"
+        className="flex flex-col items-center justify-center"
       />
+      <p className="text-center text-gray-500 text-lg mt-4">
+        I have experience working with the following technologies and tools.
+        <br />
+        Click on the cards to see more details.
+      </p>
 
       <HoverEffect items={skills} />
     </div>
