@@ -1,4 +1,3 @@
-import Header from "@/app/(home)/components/Header";
 import { fullBlog } from "@/app/lib/interface";
 import { client, urlFor } from "@/app/lib/sanity";
 import withFooter from "@/app/withFooter";
@@ -22,10 +21,7 @@ async function getData(slug: string) {
 async function BlogArticle({ params }: { params: { slug: string } }) {
   const data: fullBlog = await getData(params.slug);
   return (
-    <div className="min-h-screen bg-black overflow-hidden">
-      <div className="max-w-7xl mx-auto sm:p-5">
-        <Header />
-      </div>
+    <div className="min-h-screen bg-black overflow-hidden my-28">
       <div className="max-w-5xl mx-auto px-8 mt-8">
         <h1>
           <span className="block text-base text-center text-primary font-semibold tracking-wide uppercase">
