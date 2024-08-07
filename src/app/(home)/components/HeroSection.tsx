@@ -11,9 +11,9 @@ const RotatingCube = dynamic(() => import("@/components/rotating-cube"), {
 });
 export default function HeroSection() {
   return (
-    <div className="min-h-[60vh] flex flex-col-reverse gap-10 lg:gap-0 lg:flex-row items-center justify-between animate-move-up">
+    <div className="relative z-20 pt-[60px] md:h-screen md:max-h-[950px] md:pt-0 min-h-[60vh] flex flex-col-reverse gap-10 lg:gap-0 lg:flex-row items-center justify-between animate-move-up max-w-7xl mx-auto">
       <div className="flex flex-col justify-center items-center lg:items-start space-y-10 text-center lg:text-left">
-        <h1 className="text-4xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-200 to-gray-400">
+        <h1 className="text-4xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-200 to-gray-400 z-10">
           Nice to meet you!
           <br />
           <span className="">
@@ -33,9 +33,9 @@ export default function HeroSection() {
           </Button>
         </Link>
       </div>
-      <div className="relative flex justify-center items-center -z-1 spotlight">
+      <div className="relative flex justify-center items-center -z-1">
         <div className="absolute order-1 transform-gpu grayscale md:order-2 md:w-[700px] hidden items-center justify-center lg:flex lg:animate-[open-scale-up-fade_1.5s_ease-in-out] before:from-green-5/5 before:to-yellow-6/25 before:absolute before:left-0 before:top-0 before:block before:h-full before:w-full before:rounded-full before:bg-gradient-to-br before:blur-[100px] before:content-['']">
-          <div className="lg:absolute top-0 left-0 right-0 bottom-0 flex lg:justify-end items-center lg:mr-40 transform mt-5 spotlight">
+          <div className="lg:absolute top-0 left-0 right-0 bottom-0 flex lg:justify-end items-center lg:mr-40 transform mt-5">
             <RotatingCube />
           </div>
         </div>

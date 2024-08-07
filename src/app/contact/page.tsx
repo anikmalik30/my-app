@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import Header from "../(home)/components/Header";
+import Header from "../../components/Header";
 import React, { useState } from "react";
 
 function ContactPage() {
@@ -11,10 +11,10 @@ function ContactPage() {
 
   return (
     <>
-      <div className="min-h-screen overflow-hidden">
-        <div className="max-w-7xl mx-auto sm:p-5">
+      <div className="overflow-hidden my-20">
+        {/* <div className="max-w-7xl mx-auto sm:p-5">
           <Header />
-        </div>
+        </div> */}
         <motion.div
           className="flex-grow"
           initial={{ y: "-200vh" }}
@@ -40,7 +40,6 @@ function ContactPage() {
                     {letter}
                   </motion.span>
                 ))}
-                😊
                 {/* </motion.div> */}
               </div>
             </div>

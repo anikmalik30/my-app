@@ -33,7 +33,7 @@ function Projects() {
     <div className="py-10 p-5 sm:p-0">
       <Title
         text="Projects"
-        className="flex flex-col items-center justify-center rotate-6"
+        className="flex flex-col items-center justify-center"
       />
       <div className="grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5 ">
         {projects.map((project, index) => {
@@ -44,13 +44,13 @@ function Projects() {
                   imageUrl={project.cover}
                   className="w-full space-y-5 cursor-pointer"
                 >
-                    <div className="space-y-5">
-                  <h1 className="text-2xl font-bold">{project.title}</h1>
-                  <div className="flex items-center gap-5">
-                    {project.tech.map((Icon, index) => (
-                      <Icon key={Icon.name} className="w-8 h-8" />
-                    ))}
-                  </div>
+                  <div className="space-y-5">
+                    <h1 className="text-2xl font-bold">{project.title}</h1>
+                    <div className="flex items-center gap-5">
+                      {project.tech.map((Icon, index) => (
+                        <Icon key={Icon.name} className="w-8 h-8" />
+                      ))}
+                    </div>
                   </div>
                 </DirectionAwareHover>
               </div>

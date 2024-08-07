@@ -143,7 +143,8 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-  cursor: none;
+  /* cursor: none; */
+  cursor: pointer;
 }
 
 .glow {

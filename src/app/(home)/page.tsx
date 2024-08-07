@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import dynamic from "next/dynamic";
 import withFooter from "../withFooter";
 
-const Header = dynamic(() => import("./components/Header"), { ssr: false });
+const Header = dynamic(() => import("../../components/Header"), { ssr: false });
 const HeroSection = dynamic(() => import("./components/HeroSection"), {
   ssr: false,
 });
@@ -18,14 +18,23 @@ function Page() {
 
   return (
     <div className="min-h-screen bg-black overflow-hidden">
-      <div className=" dark:bg-black bg-white  dark:bg-grid-white/[0.05] bg-grid-black/[0.2] relative">
+      <div
+        className="relative w-full"
+        style={{
+          backgroundImage: `url('/bghero.png')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed", // This makes sure the background image stays fixed on scroll
+        }}
+      >
         {/* <ParticlesContainer /> */}
-        <div className="max-w-7xl mx-auto sm:p-5">
-          {/* <Header />
+        {/* <div className="max-w-7xl mx-auto"> */}
+        {/* <Header />
           <HeroSection /> */}
-          {header}
-          {heroSection}
-        </div>
+        {/* {header} */}
+        {/* <Header /> */}
+        {heroSection}
+        {/* </div> */}
         <div
           className="h-10 bg-gradient-to-t from-black absolute -bottom-5 left-0 
       xl:bottom-0 w-full"

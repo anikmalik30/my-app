@@ -3,13 +3,12 @@ import Brain from "@/components/brain";
 import { motion, useInView, useScroll } from "framer-motion";
 import Image from "next/image";
 import React, { useRef } from "react";
-import Header from "../(home)/components/Header";
+import Header from "../../components/Header";
 import withFooter from "../withFooter";
 // import AAnimation from "@/components/a-animation";
 import dynamic from "next/dynamic";
-import ScrollSvg from "../../components/ui/scrollSvg"
+import ScrollSvg from "../../components/ui/scrollSvg";
 // const AAnimation = dynamic(() => import("@/components/a-animation"), { ssr: false });
-
 
 function AboutPage() {
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -43,10 +42,10 @@ function AboutPage() {
   return (
     // <div>
     <>
-      <div className="min-h-screen overflow-hidden">
-      <div className="max-w-7xl mx-auto sm:p-5 z-20">
+      <div className="min-h-screen overflow-hidden mt-28">
+        {/* <div className="max-w-7xl mx-auto sm:p-5 z-20">
           <Header />
-        </div>
+        </div> */}
         <motion.div
           className="h-full"
           initial={{ y: "-200vh" }}
@@ -74,9 +73,9 @@ function AboutPage() {
                 <p className="text-lg">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Doloremque voluptatem consectetur repudiandae voluptate est
-                  alias. Illum doloribus numquam aliquid odit porro quos nesciunt
-                  aspernatur! Illum deserunt aperiam consequatur repellat
-                  laudantium!
+                  alias. Illum doloribus numquam aliquid odit porro quos
+                  nesciunt aspernatur! Illum deserunt aperiam consequatur
+                  repellat laudantium!
                 </p>
                 {/* BIO QUOTE */}
                 <span className="italic">
@@ -84,10 +83,15 @@ function AboutPage() {
                 </span>
                 {/* BIO SIGNATURE */}
                 <div className="self-end">
-                  <Image src="/sign.svg" alt="Description of image" width={140} height={140} />
+                  <Image
+                    src="/sign.svg"
+                    alt="Description of image"
+                    width={140}
+                    height={140}
+                  />
                 </div>
                 {/* SCROLL SVG*/}
-                <ScrollSvg/>
+                <ScrollSvg />
               </div>
               {/* SKILLS CONTAINER */}
               <div
@@ -111,14 +115,17 @@ function AboutPage() {
                 >
                   {skills.map((skill, index) => {
                     return (
-                      <div key={index} className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                      <div
+                        key={index}
+                        className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black"
+                      >
                         {skill.name}
                       </div>
-                    )
+                    );
                   })}
                 </motion.div>
                 {/* SKILL SCROLL */}
-                <ScrollSvg/>
+                <ScrollSvg />
               </div>
               {/* EXPERIENCE CONTAINER */}
               <div
@@ -216,8 +223,8 @@ function AboutPage() {
                       </div>
                       {/* JOB DESC */}
                       <div className="p-3 text-sm italic">
-                        I provided web solutions, applying a range of technologies
-                        to address client requirements.{" "}
+                        I provided web solutions, applying a range of
+                        technologies to address client requirements.{" "}
                       </div>
                       {/* JOB DATE */}
                       <div className="p-3 text-red-400 text-sm font-semibold">
@@ -240,11 +247,10 @@ function AboutPage() {
             </div>
             {/* SVG CONTAINER */}
           </div>
-
         </motion.div>
         {/* <AAnimation /> */}
-      {/* <div className="my-10 -z-10"> */}
-      {/* </div> */}
+        {/* <div className="my-10 -z-10"> */}
+        {/* </div> */}
       </div>
     </>
   );

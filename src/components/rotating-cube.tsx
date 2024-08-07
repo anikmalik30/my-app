@@ -4,7 +4,7 @@ import Spline from "@splinetool/react-spline/next";
 export default function RotatingCube() {
   return (
     <main
-      className="relative animate-webgl-scale-in-fade mr-40 spotlight"
+      className="relative animate-webgl-scale-in-fade mr-40"
       style={{
         transform: "scale(0.8)",
         top: "-10px",

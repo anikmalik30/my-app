@@ -1,10 +1,6 @@
 import React from "react";
-import Header from "./Header";
+import Header from "../../../components/Header";
 
 export default function Footer() {
-  return (
-    <div className="border-t mt-10">
-      <Header className="flex-col gap-5" />
-    </div>
-  );
+  return <div className="border-t mt-10">Footer</div>;
 }
